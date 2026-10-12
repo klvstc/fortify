@@ -1,0 +1,22 @@
+{
+  "short_name": "Fortify",
+  "name": "Fortify",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "fullscreen",
+  "theme_color": "#111827",
+  "background_color": "#111827",
+  "description": "An application to help users fortify their discipline, track their progress, and stay motivated on their journey of self-improvement and breaking habits.",
+  "gcm_sender_id": "103953800507"
+}

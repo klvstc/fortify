@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Fortify</title>
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#000000">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.gstatic.com">
+    <link rel="preconnect" href="https://esm.sh">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --color-background-start: #00021A;
+        --color-background-end: #000000;
+        --color-glow-1: #007CF0; /* Vibrant Blue */
+        --color-glow-2: #7A00F0; /* Vibrant Purple */
+        --color-glow-3: #F0007A; /* Vibrant Magenta */
+        --color-text-primary: #F8FAFC; /* slate-50 */
+        --color-text-secondary: #94A3B8; /* slate-400 */
+        --color-text-tertiary: #475569; /* slate-600 */
+        --color-accent-primary: #38BDF8; /* sky-400 */
+        --color-accent-secondary: #A78BFA; /* violet-400 */
+        --color-accent-success: #2DD4BF; /* teal-400 */
+        --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+      }
+      body {
+          margin: 0;
+          font-family: var(--font-sans);
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          background-color: var(--color-background-end);
+          color: var(--color-text-primary);
+          overflow-x: hidden;
+      }
+      body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(180deg, var(--color-background-start) 0%, var(--color-background-end) 100%);
+        z-index: -2;
+      }
+      #root {
+        isolation: isolate;
+      }
+      #root::before,
+      #root::after {
+        content: '';
+        position: fixed;
+        z-index: -1;
+        pointer-events: none;
+        border-radius: 50%;
+        mix-blend-mode: plus-lighter;
+        filter: blur(100px);
+        will-change: transform, opacity;
+      }
+      #root::before {
+        width: 60vmax;
+        height: 60vmax;
+        background: radial-gradient(circle, var(--color-glow-1) 0%, transparent 60%);
+        animation: move-glow-1 20s ease-in-out infinite alternate;
+      }
+      #root::after {
+        bottom: 5%;
+        right: 15%;
+        width: 50vmax;
+        height: 50vmax;
+        background: radial-gradient(circle, var(--color-glow-2) 0%, transparent 60%);
+        animation: move-glow-2 25s ease-in-out infinite alternate;
+      }
+      
+      @keyframes move-glow-1 {
+        from {
+          transform: translate(-20vw, -15vh) rotate(0deg) scale(1);
+          opacity: 0.2;
+        }
+        50% {
+          transform: translate(0vw, 0vh) rotate(15deg) scale(1.1);
+          opacity: 0.3;
+        }
+        to {
+          transform: translate(20vw, 10vh) rotate(30deg) scale(1);
+          opacity: 0.2;
+        }
+      }
+      @keyframes move-glow-2 {
+        from {
+          transform: translate(15vw, 20vh) rotate(45deg) scale(1);
+          opacity: 0.15;
+        }
+        50% {
+          transform: translate(2.5vw, 2.5vh) rotate(15deg) scale(0.9);
+          opacity: 0.25;
+        }
+        to {
+          transform: translate(-10vw, -15vh) rotate(-15deg) scale(1);
+          opacity: 0.15;
+        }
+      }
+
+      .safe-padding {
+        padding: 1rem;
+        padding-top: calc(1rem + env(safe-area-inset-top, 0px));
+        padding-right: calc(1rem + env(safe-area-inset-right, 0px));
+        padding-bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+        padding-left: calc(1rem + env(safe-area-inset-left, 0px));
+      }
+      @media (min-width: 640px) {
+        .safe-padding {
+          padding: 1.5rem;
+          padding-top: calc(1.5rem + env(safe-area-inset-top, 0px));
+          padding-right: calc(1.5rem + env(safe-area-inset-right, 0px));
+          padding-bottom: calc(1.5rem + env(safe-area-inset-bottom, 0px));
+          padding-left: calc(1.5rem + env(safe-area-inset-left, 0px));
+        }
+      }
+      .glass-panel {
+        background-color: rgba(16, 15, 38, 0.4);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+      }
+    </style>
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-functions.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-messaging.js"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0",
+    "firebase-functions": "https://aistudiocdn.com/firebase-functions@^6.6.0",
+    "firebase-functions/": "https://aistudiocdn.com/firebase-functions@^6.6.0/",
+    "firebase-admin": "https://aistudiocdn.com/firebase-admin@^13.6.0",
+    "googleapis": "https://aistudiocdn.com/googleapis@^165.0.0",
+    "buffer": "https://aistudiocdn.com/buffer@^6.0.3",
+    "vite": "https://aistudiocdn.com/vite@^7.2.2",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script src="https://storage.googleapis.com/twa-assets/client-side-setup-v2.js"></script>
+    <script>
+      // This is the CORRECTED script.
+      // It reliably checks the URL for the token and saves it to localStorage.
+      // The logic you already have in AuthContext.tsx will then correctly handle it.
+      (() => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const fcmToken = urlParams.get('fcmToken');
+
+        if (fcmToken) {
+          console.log('FCM Token from TWA found in URL. Saving to localStorage.');
+          localStorage.setItem('pendingFCMToken', fcmToken);
+        }
+      })();
+    </script>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
