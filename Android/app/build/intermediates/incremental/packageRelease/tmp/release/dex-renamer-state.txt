@@ -1,0 +1,4 @@
+#Sat Nov 08 23:59:02 IST 2025
+base.0=/Users/tanishq/Downloads/Fortify/Android/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

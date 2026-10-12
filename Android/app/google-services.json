@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1060219683777",
+    "project_id": "fortify-final",
+    "storage_bucket": "fortify-final.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1060219683777:android:ce423d2a67d792ea6c2540",
+        "android_client_info": {
+          "package_name": "app.fortify.twa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1060219683777-r4aeaiunsv6r3ujilbubitnq3oksrasd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.fortify.twa",
+            "certificate_hash": "48e40d89fc5d876b3dda9344a952dd7de2c625f4"
+          }
+        },
+        {
+          "client_id": "1060219683777-2uv2v1ebnacapq1g68rfkqfo2qe59pur.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHFdmesyAO4xU3bbe_fMgd_0hPQOfqz_Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1060219683777-2uv2v1ebnacapq1g68rfkqfo2qe59pur.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

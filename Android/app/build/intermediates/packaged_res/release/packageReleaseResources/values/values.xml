@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="enableNotification">true</bool>
+    <bool name="enableSiteSettingsShortcut">true</bool>
+    <color name="backgroundColor">#16181A</color>
+    <color name="colorPrimary">#111827</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="navigationColor">#000000</color>
+    <color name="navigationColorDark">#000000</color>
+    <color name="navigationDividerColor">#000000</color>
+    <color name="navigationDividerColorDark">#000000</color>
+    <color name="shortcut_background">#F5F5F5</color>
+    <integer name="splashScreenFadeOutDuration">300</integer>
+    <string name="appName" translatable="false">Fortify</string>
+    <string name="assetStatements">
+    [{
+        \"relation\": [\"delegate_permission/common.handle_all_urls\"],
+        \"target\": {
+            \"namespace\": \"web\",
+            \"site\": \"https://fortify-streak-tracker-1060219683777.us-west1.run.app\"
+        }
+    }]
+    
+  </string>
+    <string name="default_web_client_id" translatable="false">1060219683777-2uv2v1ebnacapq1g68rfkqfo2qe59pur.apps.googleusercontent.com</string>
+    <string name="fallbackType" translatable="false">customtabs</string>
+    <string name="fullScopeUrl" translatable="false">https://fortify-streak-tracker-1060219683777.us-west1.run.app/</string>
+    <string name="gcm_defaultSenderId" translatable="false">1060219683777</string>
+    <string name="generatorApp" translatable="false">bubblewrap-cli</string>
+    <string name="google_api_key" translatable="false">AIzaSyDHFdmesyAO4xU3bbe_fMgd_0hPQOfqz_Y</string>
+    <string name="google_app_id" translatable="false">1:1060219683777:android:ce423d2a67d792ea6c2540</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDHFdmesyAO4xU3bbe_fMgd_0hPQOfqz_Y</string>
+    <string name="google_storage_bucket" translatable="false">fortify-final.firebasestorage.app</string>
+    <string name="hostName" translatable="false">fortify-streak-tracker-1060219683777.us-west1.run.app</string>
+    <string name="launchUrl" translatable="false">https://fortify-streak-tracker-1060219683777.us-west1.run.app/</string>
+    <string name="launcherName" translatable="false">Fortify</string>
+    <string name="orientation" translatable="false">portrait</string>
+    <string name="project_id" translatable="false">fortify-final</string>
+    <string name="providerAuthority" translatable="false">app.fortify.twa.fileprovider</string>
+    <string name="webManifestUrl" translatable="false">https://fortify-streak-tracker-1060219683777.us-west1.run.app/manifest.json</string>
+</resources>

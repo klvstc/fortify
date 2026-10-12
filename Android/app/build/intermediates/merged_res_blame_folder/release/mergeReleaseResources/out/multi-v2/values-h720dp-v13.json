@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "app.fortify.twa.app-mergeReleaseResources-30:/values-h720dp-v13/values-h720dp-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/tanishq/.gradle/caches/8.13/transforms/932d7949564f729b7f83ebd15e2ea63b/transformed/appcompat-1.7.0/res/values-h720dp-v13/values-h720dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "66",
+                        "endOffsets": "117"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">1060219683777-2uv2v1ebnacapq1g68rfkqfo2qe59pur.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">1060219683777</string>
+    <string name="google_api_key" translatable="false">AIzaSyDHFdmesyAO4xU3bbe_fMgd_0hPQOfqz_Y</string>
+    <string name="google_app_id" translatable="false">1:1060219683777:android:ce423d2a67d792ea6c2540</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDHFdmesyAO4xU3bbe_fMgd_0hPQOfqz_Y</string>
+    <string name="google_storage_bucket" translatable="false">fortify-final.firebasestorage.app</string>
+    <string name="project_id" translatable="false">fortify-final</string>
+</resources>

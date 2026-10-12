@@ -1,0 +1,669 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3    Copyright 2019 Google Inc. All Rights Reserved.
+4
+5     Licensed under the Apache License, Version 2.0 (the "License");
+6     you may not use this file except in compliance with the License.
+7     You may obtain a copy of the License at
+8
+9         http://www.apache.org/licenses/LICENSE-2.0
+10
+11     Unless required by applicable law or agreed to in writing, software
+12     distributed under the License is distributed on an "AS IS" BASIS,
+13     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+14     See the License for the specific language governing permissions and
+15     limitations under the License.
+16-->
+17<!--
+18 The "package" attribute is rewritten by the Gradle build with the value of applicationId.
+19     It is still required here, as it is used to derive paths, for instance when referring
+20     to an Activity by ".MyActivity" instead of the full name. If more Activities are added to the
+21     application, the package attribute will need to reflect the correct path in order to use
+22     the abbreviated format.
+23-->
+24<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+25    package="app.fortify.twa"
+26    android:versionCode="101"
+27    android:versionName="101" >
+28
+29    <uses-sdk
+30        android:minSdkVersion="21"
+31        android:targetSdkVersion="35" />
+32
+33    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+33-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:26:9-80
+33-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:26:26-78
+34    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+34-->[com.google.firebase:firebase-messaging:24.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/9e9db41c853050bee6afbb78e2a2dbac/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:22:5-79
+34-->[com.google.firebase:firebase-messaging:24.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/9e9db41c853050bee6afbb78e2a2dbac/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:22:22-76
+35    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+35-->[com.google.firebase:firebase-messaging:24.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/9e9db41c853050bee6afbb78e2a2dbac/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:24:5-68
+35-->[com.google.firebase:firebase-messaging:24.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/9e9db41c853050bee6afbb78e2a2dbac/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:24:22-65
+36    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+36-->[com.google.firebase:firebase-messaging:24.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/9e9db41c853050bee6afbb78e2a2dbac/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:26:5-82
+36-->[com.google.firebase:firebase-messaging:24.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/9e9db41c853050bee6afbb78e2a2dbac/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:26:22-79
+37    <uses-permission android:name="android.permission.INTERNET" />
+37-->[com.google.firebase:firebase-firestore:25.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/fb7aa72e47cca45317c4fb7bbf203f58/transformed/firebase-firestore-25.0.0/AndroidManifest.xml:11:5-67
+37-->[com.google.firebase:firebase-firestore:25.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/fb7aa72e47cca45317c4fb7bbf203f58/transformed/firebase-firestore-25.0.0/AndroidManifest.xml:11:22-64
+38
+39    <queries>
+39-->[com.google.androidbrowserhelper:androidbrowserhelper:2.6.2] /Users/tanishq/.gradle/caches/8.13/transforms/0fae0e198861ed13dc2776c20d744b66/transformed/androidbrowserhelper-2.6.2/AndroidManifest.xml:22:5-30:15
+40        <intent>
+40-->[com.google.androidbrowserhelper:androidbrowserhelper:2.6.2] /Users/tanishq/.gradle/caches/8.13/transforms/0fae0e198861ed13dc2776c20d744b66/transformed/androidbrowserhelper-2.6.2/AndroidManifest.xml:23:9-29:18
+41            <action android:name="android.intent.action.VIEW" />
+41-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:155:17-68
+41-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:155:25-66
+42
+43            <category android:name="android.intent.category.BROWSABLE" />
+43-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:157:17-77
+43-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:157:27-75
+44
+45            <data android:scheme="https" />
+45-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:158:17-161:19
+45-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:158:23-45
+46        </intent>
+47        <intent>
+47-->[com.android.billingclient:billing:7.1.1] /Users/tanishq/.gradle/caches/8.13/transforms/f93cc7c0b1e37badf207bf8290320b5a/transformed/billing-7.1.1/AndroidManifest.xml:13:9-15:18
+48            <action android:name="com.android.vending.billing.InAppBillingService.BIND" />
+48-->[com.android.billingclient:billing:7.1.1] /Users/tanishq/.gradle/caches/8.13/transforms/f93cc7c0b1e37badf207bf8290320b5a/transformed/billing-7.1.1/AndroidManifest.xml:14:13-91
+48-->[com.android.billingclient:billing:7.1.1] /Users/tanishq/.gradle/caches/8.13/transforms/f93cc7c0b1e37badf207bf8290320b5a/transformed/billing-7.1.1/AndroidManifest.xml:14:21-88
+49        </intent>
+50        <intent>
+50-->[com.android.billingclient:billing:7.1.1] /Users/tanishq/.gradle/caches/8.13/transforms/f93cc7c0b1e37badf207bf8290320b5a/transformed/billing-7.1.1/AndroidManifest.xml:16:9-18:18
+51            <action android:name="com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND" />
+51-->[com.android.billingclient:billing:7.1.1] /Users/tanishq/.gradle/caches/8.13/transforms/f93cc7c0b1e37badf207bf8290320b5a/transformed/billing-7.1.1/AndroidManifest.xml:17:13-116
+51-->[com.android.billingclient:billing:7.1.1] /Users/tanishq/.gradle/caches/8.13/transforms/f93cc7c0b1e37badf207bf8290320b5a/transformed/billing-7.1.1/AndroidManifest.xml:17:21-113
+52        </intent>
+53    </queries>
+54
+55    <uses-permission android:name="com.android.vending.BILLING" />
+55-->[com.android.billingclient:billing:7.1.1] /Users/tanishq/.gradle/caches/8.13/transforms/f93cc7c0b1e37badf207bf8290320b5a/transformed/billing-7.1.1/AndroidManifest.xml:10:5-67
+55-->[com.android.billingclient:billing:7.1.1] /Users/tanishq/.gradle/caches/8.13/transforms/f93cc7c0b1e37badf207bf8290320b5a/transformed/billing-7.1.1/AndroidManifest.xml:10:22-64
+56
+57    <permission
+57-->[androidx.core:core:1.13.0] /Users/tanishq/.gradle/caches/8.13/transforms/89ea1766dbe6761a646e0652e40140cf/transformed/core-1.13.0/AndroidManifest.xml:22:5-24:47
+58        android:name="app.fortify.twa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+58-->[androidx.core:core:1.13.0] /Users/tanishq/.gradle/caches/8.13/transforms/89ea1766dbe6761a646e0652e40140cf/transformed/core-1.13.0/AndroidManifest.xml:23:9-81
+59        android:protectionLevel="signature" />
+59-->[androidx.core:core:1.13.0] /Users/tanishq/.gradle/caches/8.13/transforms/89ea1766dbe6761a646e0652e40140cf/transformed/core-1.13.0/AndroidManifest.xml:24:9-44
+60
+61    <uses-permission android:name="app.fortify.twa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+61-->[androidx.core:core:1.13.0] /Users/tanishq/.gradle/caches/8.13/transforms/89ea1766dbe6761a646e0652e40140cf/transformed/core-1.13.0/AndroidManifest.xml:26:5-97
+61-->[androidx.core:core:1.13.0] /Users/tanishq/.gradle/caches/8.13/transforms/89ea1766dbe6761a646e0652e40140cf/transformed/core-1.13.0/AndroidManifest.xml:26:22-94
+62
+63    <application
+63-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:35:5-239:19
+64        android:name="app.fortify.twa.Application"
+64-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:36:9-35
+65        android:allowBackup="true"
+65-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:37:9-35
+66        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+66-->[androidx.core:core:1.13.0] /Users/tanishq/.gradle/caches/8.13/transforms/89ea1766dbe6761a646e0652e40140cf/transformed/core-1.13.0/AndroidManifest.xml:28:18-86
+67        android:extractNativeLibs="true"
+68        android:icon="@mipmap/ic_launcher"
+68-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:38:9-43
+69        android:label="@string/appName"
+69-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:39:9-40
+70        android:manageSpaceActivity="com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity"
+70-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:41:9-105
+71        android:supportsRtl="true"
+71-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:43:9-35
+72        android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+72-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:44:9-68
+73        <meta-data
+73-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:46:9-48:58
+74            android:name="asset_statements"
+74-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:47:13-44
+75            android:resource="@string/assetStatements" />
+75-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:48:13-55
+76        <meta-data
+76-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:51:13-53:58
+77            android:name="web_manifest_url"
+77-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:52:17-48
+78            android:value="@string/webManifestUrl" />
+78-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:53:17-55
+79        <meta-data
+79-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:56:9-58:52
+80            android:name="twa_generator"
+80-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:57:13-41
+81            android:value="@string/generatorApp" />
+81-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:58:13-49
+82        <meta-data
+82-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:60:9-62:424
+83            android:name="com.google.android.play.billingclient.APPLICATION_LICENSE_KEY"
+83-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:61:13-89
+84            android:value="MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzj9+QHCKCOHTUPIvqiwDGxd8Zxtr4usCBIbqjEFujdl4cakJiQhg1/AGR3qpWT6NLjZrcGxwmqwYOVNH3+GOARgNB8lEeNGFCv/egpQq9n9ljOiuZ8Kedlxa5VDKpfr581rGbdALswWeSxYhD3HMGmTVqM6nUiAE//1GiA1HslhP7gueThAru+3iZnKSMPvWhyz9BkWvj2QilGCkeWVxCEgXh4ye0TiECks8eO1qi7EU67LVb4UuLz7WjD0DhpjTjkUvRth2SoriNzJIUytJnyd2mxCrqZ+YlaexgFPhBSpsWWPKivixXceVDQZauKNL5S/RLja+AflSHJWfi7uwwwIDAQAB" />
+84-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:62:13-421
+85
+86        <activity
+86-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:69:13-80:24
+87            android:name="com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity"
+87-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:69:23-104
+88            android:enabled="true"
+88-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:71:17-39
+89            android:excludeFromRecents="true"
+89-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:72:17-50
+90            android:exported="false" >
+90-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:70:17-41
+91            <meta-data
+91-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:73:17-75:57
+92                android:name="android.support.customtabs.trusted.MANAGE_SPACE_URL"
+92-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:74:21-87
+93                android:value="@string/launchUrl" />
+93-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:75:21-54
+94
+95            <intent-filter>
+95-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:76:17-79:33
+96                <action android:name="android.intent.action.APPLICATION_PREFERENCES" />
+96-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:77:21-92
+96-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:77:29-89
+97
+98                <category android:name="android.intent.category.DEFAULT" />
+98-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:78:21-80
+98-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:78:31-77
+99            </intent-filter>
+100        </activity>
+101        <activity
+101-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:83:9-167:20
+102            android:name="app.fortify.twa.LauncherActivity"
+102-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:83:19-50
+103            android:alwaysRetainTaskState="true"
+103-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:84:13-49
+104            android:exported="true"
+104-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:86:13-36
+105            android:label="@string/launcherName" >
+105-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:85:13-49
+106            <meta-data
+106-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:87:13-88:53
+107                android:name="android.support.customtabs.trusted.DEFAULT_URL"
+107-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:87:24-85
+108                android:value="@string/launchUrl" />
+108-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:88:17-50
+109            <meta-data
+109-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:90:13-92:58
+110                android:name="android.support.customtabs.trusted.STATUS_BAR_COLOR"
+110-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:91:17-83
+111                android:resource="@color/colorPrimary" />
+111-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:92:17-55
+112            <meta-data
+112-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:96:13-98:62
+113                android:name="android.support.customtabs.trusted.STATUS_BAR_COLOR_DARK"
+113-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:97:17-88
+114                android:resource="@color/colorPrimaryDark" />
+114-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:98:17-59
+115            <meta-data
+115-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:100:13-102:61
+116                android:name="android.support.customtabs.trusted.NAVIGATION_BAR_COLOR"
+116-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:101:17-87
+117                android:resource="@color/navigationColor" />
+117-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:102:17-58
+118            <meta-data
+118-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:104:13-106:65
+119                android:name="android.support.customtabs.trusted.NAVIGATION_BAR_COLOR_DARK"
+119-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:105:17-92
+120                android:resource="@color/navigationColorDark" />
+120-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:106:17-62
+121            <meta-data
+121-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:108:13-110:68
+122                android:name="androix.browser.trusted.NAVIGATION_BAR_DIVIDER_COLOR"
+122-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:109:17-84
+123                android:resource="@color/navigationDividerColor" />
+123-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:110:17-65
+124            <meta-data
+124-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:112:13-114:72
+125                android:name="androix.browser.trusted.NAVIGATION_BAR_DIVIDER_COLOR_DARK"
+125-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:113:17-89
+126                android:resource="@color/navigationDividerColorDark" />
+126-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:114:17-69
+127            <meta-data
+127-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:116:13-117:54
+128                android:name="android.support.customtabs.trusted.SPLASH_IMAGE_DRAWABLE"
+128-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:116:24-95
+129                android:resource="@drawable/splash" />
+129-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:117:17-52
+130            <meta-data
+130-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:119:13-120:60
+131                android:name="android.support.customtabs.trusted.SPLASH_SCREEN_BACKGROUND_COLOR"
+131-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:119:24-104
+132                android:resource="@color/backgroundColor" />
+132-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:120:17-58
+133            <meta-data
+133-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:122:13-123:71
+134                android:name="android.support.customtabs.trusted.SPLASH_SCREEN_FADE_OUT_DURATION"
+134-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:122:24-105
+135                android:value="@integer/splashScreenFadeOutDuration" />
+135-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:123:17-69
+136            <meta-data
+136-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:125:13-126:60
+137                android:name="android.support.customtabs.trusted.FILE_PROVIDER_AUTHORITY"
+137-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:125:24-97
+138                android:value="@string/providerAuthority" />
+138-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:126:17-58
+139            <meta-data
+139-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:128:13-97
+140                android:name="android.app.shortcuts"
+140-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:128:24-60
+141                android:resource="@xml/shortcuts" />
+141-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:128:61-94
+142            <meta-data
+142-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:130:13-131:56
+143                android:name="android.support.customtabs.trusted.FALLBACK_STRATEGY"
+143-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:130:24-91
+144                android:value="@string/fallbackType" />
+144-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:131:17-53
+145            <meta-data
+145-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:136:13-137:45
+146                android:name="android.support.customtabs.trusted.DISPLAY_MODE"
+146-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:136:24-86
+147                android:value="immersive" />
+147-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:137:17-42
+148            <meta-data
+148-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:140:13-141:54
+149                android:name="android.support.customtabs.trusted.SCREEN_ORIENTATION"
+149-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:140:24-92
+150                android:value="@string/orientation" />
+150-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:141:17-52
+151
+152            <intent-filter>
+152-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:149:13-152:29
+153                <action android:name="android.intent.action.MAIN" />
+153-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:150:17-69
+153-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:150:25-66
+154
+155                <category android:name="android.intent.category.LAUNCHER" />
+155-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:151:17-77
+155-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:151:27-74
+156            </intent-filter>
+157            <intent-filter android:autoVerify="true" >
+157-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:154:13-162:29
+157-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:154:28-53
+158                <action android:name="android.intent.action.VIEW" />
+158-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:155:17-68
+158-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:155:25-66
+159
+160                <category android:name="android.intent.category.DEFAULT" />
+160-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:78:21-80
+160-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:78:31-77
+161                <category android:name="android.intent.category.BROWSABLE" />
+161-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:157:17-77
+161-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:157:27-75
+162
+163                <data
+163-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:158:17-161:19
+164                    android:host="@string/hostName"
+164-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:159:21-52
+165                    android:scheme="https" />
+165-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:158:23-45
+166            </intent-filter>
+167        </activity>
+168        <activity android:name="com.google.androidbrowserhelper.trusted.FocusActivity" />
+168-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:169:9-90
+168-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:169:19-87
+169        <activity
+169-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:171:9-172:62
+170            android:name="com.google.androidbrowserhelper.trusted.WebViewFallbackActivity"
+170-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:171:19-97
+171            android:configChanges="orientation|screenSize" />
+171-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:172:13-59
+172
+173        <provider
+173-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:174:9-182:20
+174            android:name="androidx.core.content.FileProvider"
+174-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:175:13-62
+175            android:authorities="@string/providerAuthority"
+175-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:176:13-60
+176            android:exported="false"
+176-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:178:13-37
+177            android:grantUriPermissions="true" >
+177-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:177:13-47
+178            <meta-data
+178-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:179:13-181:53
+179                android:name="android.support.FILE_PROVIDER_PATHS"
+179-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:180:17-67
+180                android:resource="@xml/filepaths" />
+180-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:181:17-50
+181        </provider>
+182
+183        <service
+183-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:184:9-199:19
+184            android:name="app.fortify.twa.DelegationService"
+184-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:185:13-46
+185            android:enabled="@bool/enableNotification"
+185-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:186:13-55
+186            android:exported="@bool/enableNotification" >
+186-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:187:13-56
+187            <meta-data
+187-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:190:17-192:73
+188                android:name="android.support.customtabs.trusted.SMALL_ICON"
+188-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:191:21-81
+189                android:resource="@drawable/ic_notification_icon" />
+189-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:192:21-70
+190
+191            <intent-filter>
+191-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:195:13-198:29
+192                <action android:name="android.support.customtabs.trusted.TRUSTED_WEB_ACTIVITY_SERVICE" />
+192-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:196:17-105
+192-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:196:25-103
+193
+194                <category android:name="android.intent.category.DEFAULT" />
+194-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:78:21-80
+194-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:78:31-77
+195            </intent-filter>
+196        </service>
+197        <service
+197-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:201:9-207:19
+198            android:name="app.fortify.twa.FirebaseMessagingService"
+198-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:202:13-53
+199            android:exported="false" >
+199-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:203:13-37
+200            <intent-filter>
+200-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:204:13-206:29
+201                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+201-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:205:17-78
+201-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:205:25-75
+202            </intent-filter>
+203        </service>
+204
+205        <activity android:name="com.google.androidbrowserhelper.trusted.NotificationPermissionRequestActivity" />
+205-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:210:13-118
+205-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:210:23-115
+206        <activity
+206-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:215:9-228:20
+207            android:name="com.google.androidbrowserhelper.playbilling.provider.PaymentActivity"
+207-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:216:13-96
+208            android:configChanges="keyboardHidden|keyboard|orientation|screenLayout|screenSize"
+208-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:218:13-96
+209            android:exported="true"
+209-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:219:13-36
+210            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+210-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:217:13-72
+211            <intent-filter>
+211-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:221:13-223:29
+212                <action android:name="org.chromium.intent.action.PAY" />
+212-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:222:17-73
+212-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:222:25-70
+213            </intent-filter>
+214
+215            <meta-data
+215-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:225:13-227:67
+216                android:name="org.chromium.default_payment_method_name"
+216-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:226:17-72
+217                android:value="https://play.google.com/billing" />
+217-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:227:17-64
+218        </activity>
+219
+220        <!-- This service checks who calls it at runtime. -->
+221        <service
+221-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:231:9-237:19
+222            android:name="com.google.androidbrowserhelper.playbilling.provider.PaymentService"
+222-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:232:13-95
+223            android:exported="true" >
+223-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:233:13-36
+224            <intent-filter>
+224-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:234:13-236:29
+225                <action android:name="org.chromium.intent.action.IS_READY_TO_PAY" />
+225-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:235:17-85
+225-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:235:25-82
+226            </intent-filter>
+227        </service>
+228
+229        <receiver
+229-->[com.google.firebase:firebase-messaging:24.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/9e9db41c853050bee6afbb78e2a2dbac/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:29:9-40:20
+230            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+230-->[com.google.firebase:firebase-messaging:24.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/9e9db41c853050bee6afbb78e2a2dbac/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:30:13-78
+231            android:exported="true"
+231-->[com.google.firebase:firebase-messaging:24.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/9e9db41c853050bee6afbb78e2a2dbac/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:31:13-36
+232            android:permission="com.google.android.c2dm.permission.SEND" >
+232-->[com.google.firebase:firebase-messaging:24.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/9e9db41c853050bee6afbb78e2a2dbac/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:32:13-73
+233            <intent-filter>
+233-->[com.google.firebase:firebase-messaging:24.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/9e9db41c853050bee6afbb78e2a2dbac/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:33:13-35:29
+234                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+234-->[com.google.firebase:firebase-messaging:24.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/9e9db41c853050bee6afbb78e2a2dbac/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:34:17-81
+234-->[com.google.firebase:firebase-messaging:24.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/9e9db41c853050bee6afbb78e2a2dbac/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:34:25-78
+235            </intent-filter>
+236
+237            <meta-data
+237-->[com.google.firebase:firebase-messaging:24.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/9e9db41c853050bee6afbb78e2a2dbac/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:37:13-39:40
+238                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+238-->[com.google.firebase:firebase-messaging:24.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/9e9db41c853050bee6afbb78e2a2dbac/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:38:17-92
+239                android:value="true" />
+239-->[com.google.firebase:firebase-messaging:24.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/9e9db41c853050bee6afbb78e2a2dbac/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:39:17-37
+240        </receiver>
+241        <!--
+242             FirebaseMessagingService performs security checks at runtime,
+243             but set to not exported to explicitly avoid allowing another app to call it.
+244        -->
+245        <service
+245-->[com.google.firebase:firebase-messaging:24.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/9e9db41c853050bee6afbb78e2a2dbac/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:46:9-53:19
+246            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+246-->[com.google.firebase:firebase-messaging:24.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/9e9db41c853050bee6afbb78e2a2dbac/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:47:13-82
+247            android:directBootAware="true"
+247-->[com.google.firebase:firebase-messaging:24.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/9e9db41c853050bee6afbb78e2a2dbac/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:48:13-43
+248            android:exported="false" >
+248-->[com.google.firebase:firebase-messaging:24.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/9e9db41c853050bee6afbb78e2a2dbac/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:49:13-37
+249            <intent-filter android:priority="-500" >
+249-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:204:13-206:29
+250                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+250-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:205:17-78
+250-->/Users/tanishq/Downloads/Fortify/Android/app/src/main/AndroidManifest.xml:205:25-75
+251            </intent-filter>
+252        </service>
+253        <service
+253-->[com.google.firebase:firebase-messaging:24.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/9e9db41c853050bee6afbb78e2a2dbac/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:54:9-63:19
+254            android:name="com.google.firebase.components.ComponentDiscoveryService"
+254-->[com.google.firebase:firebase-messaging:24.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/9e9db41c853050bee6afbb78e2a2dbac/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:55:13-84
+255            android:directBootAware="true"
+255-->[com.google.firebase:firebase-common:21.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/c929a2436c0a6395c88d09c0859487f5/transformed/firebase-common-21.0.0/AndroidManifest.xml:32:13-43
+256            android:exported="false" >
+256-->[com.google.firebase:firebase-messaging:24.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/9e9db41c853050bee6afbb78e2a2dbac/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:56:13-37
+257            <meta-data
+257-->[com.google.firebase:firebase-messaging:24.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/9e9db41c853050bee6afbb78e2a2dbac/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:57:13-59:85
+258                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+258-->[com.google.firebase:firebase-messaging:24.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/9e9db41c853050bee6afbb78e2a2dbac/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:58:17-122
+259                android:value="com.google.firebase.components.ComponentRegistrar" />
+259-->[com.google.firebase:firebase-messaging:24.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/9e9db41c853050bee6afbb78e2a2dbac/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:59:17-82
+260            <meta-data
+260-->[com.google.firebase:firebase-messaging:24.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/9e9db41c853050bee6afbb78e2a2dbac/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:60:13-62:85
+261                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+261-->[com.google.firebase:firebase-messaging:24.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/9e9db41c853050bee6afbb78e2a2dbac/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:61:17-119
+262                android:value="com.google.firebase.components.ComponentRegistrar" />
+262-->[com.google.firebase:firebase-messaging:24.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/9e9db41c853050bee6afbb78e2a2dbac/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:62:17-82
+263            <meta-data
+263-->[com.google.firebase:firebase-firestore:25.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/fb7aa72e47cca45317c4fb7bbf203f58/transformed/firebase-firestore-25.0.0/AndroidManifest.xml:17:13-19:85
+264                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+264-->[com.google.firebase:firebase-firestore:25.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/fb7aa72e47cca45317c4fb7bbf203f58/transformed/firebase-firestore-25.0.0/AndroidManifest.xml:18:17-122
+265                android:value="com.google.firebase.components.ComponentRegistrar" />
+265-->[com.google.firebase:firebase-firestore:25.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/fb7aa72e47cca45317c4fb7bbf203f58/transformed/firebase-firestore-25.0.0/AndroidManifest.xml:19:17-82
+266            <meta-data
+266-->[com.google.firebase:firebase-firestore:25.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/fb7aa72e47cca45317c4fb7bbf203f58/transformed/firebase-firestore-25.0.0/AndroidManifest.xml:20:13-22:85
+267                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+267-->[com.google.firebase:firebase-firestore:25.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/fb7aa72e47cca45317c4fb7bbf203f58/transformed/firebase-firestore-25.0.0/AndroidManifest.xml:21:17-111
+268                android:value="com.google.firebase.components.ComponentRegistrar" />
+268-->[com.google.firebase:firebase-firestore:25.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/fb7aa72e47cca45317c4fb7bbf203f58/transformed/firebase-firestore-25.0.0/AndroidManifest.xml:22:17-82
+269            <meta-data
+269-->[com.google.firebase:firebase-datatransport:18.2.0] /Users/tanishq/.gradle/caches/8.13/transforms/f908dbe83a36484b0fcae10a33c57a55/transformed/firebase-datatransport-18.2.0/AndroidManifest.xml:25:13-27:85
+270                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+270-->[com.google.firebase:firebase-datatransport:18.2.0] /Users/tanishq/.gradle/caches/8.13/transforms/f908dbe83a36484b0fcae10a33c57a55/transformed/firebase-datatransport-18.2.0/AndroidManifest.xml:26:17-115
+271                android:value="com.google.firebase.components.ComponentRegistrar" />
+271-->[com.google.firebase:firebase-datatransport:18.2.0] /Users/tanishq/.gradle/caches/8.13/transforms/f908dbe83a36484b0fcae10a33c57a55/transformed/firebase-datatransport-18.2.0/AndroidManifest.xml:27:17-82
+272            <meta-data
+272-->[com.google.firebase:firebase-installations:18.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/2a319cb6c7cab159c2ef15bbef3805e8/transformed/firebase-installations-18.0.0/AndroidManifest.xml:15:13-17:85
+273                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+273-->[com.google.firebase:firebase-installations:18.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/2a319cb6c7cab159c2ef15bbef3805e8/transformed/firebase-installations-18.0.0/AndroidManifest.xml:16:17-130
+274                android:value="com.google.firebase.components.ComponentRegistrar" />
+274-->[com.google.firebase:firebase-installations:18.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/2a319cb6c7cab159c2ef15bbef3805e8/transformed/firebase-installations-18.0.0/AndroidManifest.xml:17:17-82
+275            <meta-data
+275-->[com.google.firebase:firebase-installations:18.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/2a319cb6c7cab159c2ef15bbef3805e8/transformed/firebase-installations-18.0.0/AndroidManifest.xml:18:13-20:85
+276                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+276-->[com.google.firebase:firebase-installations:18.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/2a319cb6c7cab159c2ef15bbef3805e8/transformed/firebase-installations-18.0.0/AndroidManifest.xml:19:17-127
+277                android:value="com.google.firebase.components.ComponentRegistrar" />
+277-->[com.google.firebase:firebase-installations:18.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/2a319cb6c7cab159c2ef15bbef3805e8/transformed/firebase-installations-18.0.0/AndroidManifest.xml:20:17-82
+278            <meta-data
+278-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/e4d030b9cfc2ff2c06fe33dae4768fae/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:12:13-14:85
+279                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+279-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/e4d030b9cfc2ff2c06fe33dae4768fae/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:13:17-116
+280                android:value="com.google.firebase.components.ComponentRegistrar" />
+280-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/e4d030b9cfc2ff2c06fe33dae4768fae/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:14:17-82
+281            <meta-data
+281-->[com.google.firebase:firebase-common:21.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/c929a2436c0a6395c88d09c0859487f5/transformed/firebase-common-21.0.0/AndroidManifest.xml:35:13-37:85
+282                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+282-->[com.google.firebase:firebase-common:21.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/c929a2436c0a6395c88d09c0859487f5/transformed/firebase-common-21.0.0/AndroidManifest.xml:36:17-109
+283                android:value="com.google.firebase.components.ComponentRegistrar" />
+283-->[com.google.firebase:firebase-common:21.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/c929a2436c0a6395c88d09c0859487f5/transformed/firebase-common-21.0.0/AndroidManifest.xml:37:17-82
+284        </service>
+285
+286        <meta-data
+286-->[com.android.billingclient:billing:7.1.1] /Users/tanishq/.gradle/caches/8.13/transforms/f93cc7c0b1e37badf207bf8290320b5a/transformed/billing-7.1.1/AndroidManifest.xml:22:9-24:37
+287            android:name="com.google.android.play.billingclient.version"
+287-->[com.android.billingclient:billing:7.1.1] /Users/tanishq/.gradle/caches/8.13/transforms/f93cc7c0b1e37badf207bf8290320b5a/transformed/billing-7.1.1/AndroidManifest.xml:23:13-73
+288            android:value="7.1.1" />
+288-->[com.android.billingclient:billing:7.1.1] /Users/tanishq/.gradle/caches/8.13/transforms/f93cc7c0b1e37badf207bf8290320b5a/transformed/billing-7.1.1/AndroidManifest.xml:24:13-34
+289
+290        <activity
+290-->[com.android.billingclient:billing:7.1.1] /Users/tanishq/.gradle/caches/8.13/transforms/f93cc7c0b1e37badf207bf8290320b5a/transformed/billing-7.1.1/AndroidManifest.xml:26:9-30:75
+291            android:name="com.android.billingclient.api.ProxyBillingActivity"
+291-->[com.android.billingclient:billing:7.1.1] /Users/tanishq/.gradle/caches/8.13/transforms/f93cc7c0b1e37badf207bf8290320b5a/transformed/billing-7.1.1/AndroidManifest.xml:27:13-78
+292            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+292-->[com.android.billingclient:billing:7.1.1] /Users/tanishq/.gradle/caches/8.13/transforms/f93cc7c0b1e37badf207bf8290320b5a/transformed/billing-7.1.1/AndroidManifest.xml:28:13-96
+293            android:exported="false"
+293-->[com.android.billingclient:billing:7.1.1] /Users/tanishq/.gradle/caches/8.13/transforms/f93cc7c0b1e37badf207bf8290320b5a/transformed/billing-7.1.1/AndroidManifest.xml:29:13-37
+294            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+294-->[com.android.billingclient:billing:7.1.1] /Users/tanishq/.gradle/caches/8.13/transforms/f93cc7c0b1e37badf207bf8290320b5a/transformed/billing-7.1.1/AndroidManifest.xml:30:13-72
+295        <activity
+295-->[com.android.billingclient:billing:7.1.1] /Users/tanishq/.gradle/caches/8.13/transforms/f93cc7c0b1e37badf207bf8290320b5a/transformed/billing-7.1.1/AndroidManifest.xml:31:9-35:75
+296            android:name="com.android.billingclient.api.ProxyBillingActivityV2"
+296-->[com.android.billingclient:billing:7.1.1] /Users/tanishq/.gradle/caches/8.13/transforms/f93cc7c0b1e37badf207bf8290320b5a/transformed/billing-7.1.1/AndroidManifest.xml:32:13-80
+297            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+297-->[com.android.billingclient:billing:7.1.1] /Users/tanishq/.gradle/caches/8.13/transforms/f93cc7c0b1e37badf207bf8290320b5a/transformed/billing-7.1.1/AndroidManifest.xml:33:13-96
+298            android:exported="false"
+298-->[com.android.billingclient:billing:7.1.1] /Users/tanishq/.gradle/caches/8.13/transforms/f93cc7c0b1e37badf207bf8290320b5a/transformed/billing-7.1.1/AndroidManifest.xml:34:13-37
+299            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+299-->[com.android.billingclient:billing:7.1.1] /Users/tanishq/.gradle/caches/8.13/transforms/f93cc7c0b1e37badf207bf8290320b5a/transformed/billing-7.1.1/AndroidManifest.xml:35:13-72
+300
+301        <service
+301-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/tanishq/.gradle/caches/8.13/transforms/99256adccddbe337f8b20734bb4a76b8/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:28:9-34:19
+302            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+302-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/tanishq/.gradle/caches/8.13/transforms/99256adccddbe337f8b20734bb4a76b8/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:29:13-103
+303            android:exported="false" >
+303-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/tanishq/.gradle/caches/8.13/transforms/99256adccddbe337f8b20734bb4a76b8/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:30:13-37
+304            <meta-data
+304-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/tanishq/.gradle/caches/8.13/transforms/99256adccddbe337f8b20734bb4a76b8/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:31:13-33:39
+305                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+305-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/tanishq/.gradle/caches/8.13/transforms/99256adccddbe337f8b20734bb4a76b8/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:32:17-94
+306                android:value="cct" />
+306-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/tanishq/.gradle/caches/8.13/transforms/99256adccddbe337f8b20734bb4a76b8/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:33:17-36
+307        </service>
+308        <service
+308-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/tanishq/.gradle/caches/8.13/transforms/8b4f3a68696c4b4fe84b7ff5998e2001/transformed/transport-runtime-3.1.9/AndroidManifest.xml:26:9-30:19
+309            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+309-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/tanishq/.gradle/caches/8.13/transforms/8b4f3a68696c4b4fe84b7ff5998e2001/transformed/transport-runtime-3.1.9/AndroidManifest.xml:27:13-117
+310            android:exported="false"
+310-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/tanishq/.gradle/caches/8.13/transforms/8b4f3a68696c4b4fe84b7ff5998e2001/transformed/transport-runtime-3.1.9/AndroidManifest.xml:28:13-37
+311            android:permission="android.permission.BIND_JOB_SERVICE" >
+311-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/tanishq/.gradle/caches/8.13/transforms/8b4f3a68696c4b4fe84b7ff5998e2001/transformed/transport-runtime-3.1.9/AndroidManifest.xml:29:13-69
+312        </service>
+313
+314        <receiver
+314-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/tanishq/.gradle/caches/8.13/transforms/8b4f3a68696c4b4fe84b7ff5998e2001/transformed/transport-runtime-3.1.9/AndroidManifest.xml:32:9-34:40
+315            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+315-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/tanishq/.gradle/caches/8.13/transforms/8b4f3a68696c4b4fe84b7ff5998e2001/transformed/transport-runtime-3.1.9/AndroidManifest.xml:33:13-132
+316            android:exported="false" />
+316-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/tanishq/.gradle/caches/8.13/transforms/8b4f3a68696c4b4fe84b7ff5998e2001/transformed/transport-runtime-3.1.9/AndroidManifest.xml:34:13-37
+317
+318        <provider
+318-->[com.google.firebase:firebase-common:21.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/c929a2436c0a6395c88d09c0859487f5/transformed/firebase-common-21.0.0/AndroidManifest.xml:23:9-28:39
+319            android:name="com.google.firebase.provider.FirebaseInitProvider"
+319-->[com.google.firebase:firebase-common:21.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/c929a2436c0a6395c88d09c0859487f5/transformed/firebase-common-21.0.0/AndroidManifest.xml:24:13-77
+320            android:authorities="app.fortify.twa.firebaseinitprovider"
+320-->[com.google.firebase:firebase-common:21.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/c929a2436c0a6395c88d09c0859487f5/transformed/firebase-common-21.0.0/AndroidManifest.xml:25:13-72
+321            android:directBootAware="true"
+321-->[com.google.firebase:firebase-common:21.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/c929a2436c0a6395c88d09c0859487f5/transformed/firebase-common-21.0.0/AndroidManifest.xml:26:13-43
+322            android:exported="false"
+322-->[com.google.firebase:firebase-common:21.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/c929a2436c0a6395c88d09c0859487f5/transformed/firebase-common-21.0.0/AndroidManifest.xml:27:13-37
+323            android:initOrder="100" />
+323-->[com.google.firebase:firebase-common:21.0.0] /Users/tanishq/.gradle/caches/8.13/transforms/c929a2436c0a6395c88d09c0859487f5/transformed/firebase-common-21.0.0/AndroidManifest.xml:28:13-36
+324
+325        <activity
+325-->[com.google.android.gms:play-services-base:18.5.0] /Users/tanishq/.gradle/caches/8.13/transforms/19ab4058f05a647d4f0900577065a6e9/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:9-173
+326            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+326-->[com.google.android.gms:play-services-base:18.5.0] /Users/tanishq/.gradle/caches/8.13/transforms/19ab4058f05a647d4f0900577065a6e9/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:19-85
+327            android:exported="false"
+327-->[com.google.android.gms:play-services-base:18.5.0] /Users/tanishq/.gradle/caches/8.13/transforms/19ab4058f05a647d4f0900577065a6e9/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:146-170
+328            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+328-->[com.google.android.gms:play-services-base:18.5.0] /Users/tanishq/.gradle/caches/8.13/transforms/19ab4058f05a647d4f0900577065a6e9/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:86-145
+329
+330        <meta-data
+330-->[com.google.android.gms:play-services-basement:18.4.0] /Users/tanishq/.gradle/caches/8.13/transforms/e9c4e7b50359eaac54786a23a8d12dc7/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:9-122
+331            android:name="com.google.android.gms.version"
+331-->[com.google.android.gms:play-services-basement:18.4.0] /Users/tanishq/.gradle/caches/8.13/transforms/e9c4e7b50359eaac54786a23a8d12dc7/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:20-65
+332            android:value="@integer/google_play_services_version" />
+332-->[com.google.android.gms:play-services-basement:18.4.0] /Users/tanishq/.gradle/caches/8.13/transforms/e9c4e7b50359eaac54786a23a8d12dc7/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:66-119
+333
+334        <provider
+334-->[androidx.emoji2:emoji2:1.3.0] /Users/tanishq/.gradle/caches/8.13/transforms/9486775e45f54e51d5c71ac476795f47/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+335            android:name="androidx.startup.InitializationProvider"
+335-->[androidx.emoji2:emoji2:1.3.0] /Users/tanishq/.gradle/caches/8.13/transforms/9486775e45f54e51d5c71ac476795f47/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+336            android:authorities="app.fortify.twa.androidx-startup"
+336-->[androidx.emoji2:emoji2:1.3.0] /Users/tanishq/.gradle/caches/8.13/transforms/9486775e45f54e51d5c71ac476795f47/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+337            android:exported="false" >
+337-->[androidx.emoji2:emoji2:1.3.0] /Users/tanishq/.gradle/caches/8.13/transforms/9486775e45f54e51d5c71ac476795f47/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+338            <meta-data
+338-->[androidx.emoji2:emoji2:1.3.0] /Users/tanishq/.gradle/caches/8.13/transforms/9486775e45f54e51d5c71ac476795f47/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+339                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+339-->[androidx.emoji2:emoji2:1.3.0] /Users/tanishq/.gradle/caches/8.13/transforms/9486775e45f54e51d5c71ac476795f47/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+340                android:value="androidx.startup" />
+340-->[androidx.emoji2:emoji2:1.3.0] /Users/tanishq/.gradle/caches/8.13/transforms/9486775e45f54e51d5c71ac476795f47/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+341            <meta-data
+341-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/tanishq/.gradle/caches/8.13/transforms/12b15047bf3ef769769ae8dc9573485e/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+342                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+342-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/tanishq/.gradle/caches/8.13/transforms/12b15047bf3ef769769ae8dc9573485e/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+343                android:value="androidx.startup" />
+343-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/tanishq/.gradle/caches/8.13/transforms/12b15047bf3ef769769ae8dc9573485e/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+344            <meta-data
+344-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/tanishq/.gradle/caches/8.13/transforms/e1676f28944c003faa44ca32e6dc09db/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+345                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+345-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/tanishq/.gradle/caches/8.13/transforms/e1676f28944c003faa44ca32e6dc09db/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+346                android:value="androidx.startup" />
+346-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/tanishq/.gradle/caches/8.13/transforms/e1676f28944c003faa44ca32e6dc09db/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+347        </provider>
+348
+349        <receiver
+349-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/tanishq/.gradle/caches/8.13/transforms/e1676f28944c003faa44ca32e6dc09db/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+350            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+350-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/tanishq/.gradle/caches/8.13/transforms/e1676f28944c003faa44ca32e6dc09db/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+351            android:directBootAware="false"
+351-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/tanishq/.gradle/caches/8.13/transforms/e1676f28944c003faa44ca32e6dc09db/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+352            android:enabled="true"
+352-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/tanishq/.gradle/caches/8.13/transforms/e1676f28944c003faa44ca32e6dc09db/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+353            android:exported="true"
+353-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/tanishq/.gradle/caches/8.13/transforms/e1676f28944c003faa44ca32e6dc09db/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+354            android:permission="android.permission.DUMP" >
+354-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/tanishq/.gradle/caches/8.13/transforms/e1676f28944c003faa44ca32e6dc09db/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+355            <intent-filter>
+355-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/tanishq/.gradle/caches/8.13/transforms/e1676f28944c003faa44ca32e6dc09db/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+356                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+356-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/tanishq/.gradle/caches/8.13/transforms/e1676f28944c003faa44ca32e6dc09db/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+356-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/tanishq/.gradle/caches/8.13/transforms/e1676f28944c003faa44ca32e6dc09db/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+357            </intent-filter>
+358            <intent-filter>
+358-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/tanishq/.gradle/caches/8.13/transforms/e1676f28944c003faa44ca32e6dc09db/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+359                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+359-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/tanishq/.gradle/caches/8.13/transforms/e1676f28944c003faa44ca32e6dc09db/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+359-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/tanishq/.gradle/caches/8.13/transforms/e1676f28944c003faa44ca32e6dc09db/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+360            </intent-filter>
+361            <intent-filter>
+361-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/tanishq/.gradle/caches/8.13/transforms/e1676f28944c003faa44ca32e6dc09db/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+362                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+362-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/tanishq/.gradle/caches/8.13/transforms/e1676f28944c003faa44ca32e6dc09db/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+362-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/tanishq/.gradle/caches/8.13/transforms/e1676f28944c003faa44ca32e6dc09db/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+363            </intent-filter>
+364            <intent-filter>
+364-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/tanishq/.gradle/caches/8.13/transforms/e1676f28944c003faa44ca32e6dc09db/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+365                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+365-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/tanishq/.gradle/caches/8.13/transforms/e1676f28944c003faa44ca32e6dc09db/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+365-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/tanishq/.gradle/caches/8.13/transforms/e1676f28944c003faa44ca32e6dc09db/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+366            </intent-filter>
+367        </receiver>
+368    </application>
+369
+370</manifest>
