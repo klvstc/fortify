@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/fortify-hero.jpg" alt="Fortify: Break free from old habits" width="100%" />
+  <img src="Promo/Promo%201.png" alt="Fortify: Break free from old habits" width="100%" />
 </p>
 
 <h1 align="center">FORTIFY</h1>
@@ -33,7 +33,7 @@ Changing an unwanted habit is more than counting days. It is about understanding
 **Fortify** brings a collection of habit-building tools into one experience: track daily streaks, check in with yourself, journal openly, explore AI-generated reflections, and celebrate your progress with milestones and rewards.
 
 <p align="center">
-  <img src="assets/fortify-mission.jpg" alt="Fortify mission: breaking the relapse cycle" width="100%" />
+  <img src="Promo/Screenshot%202025-09-14%20at%208.01.37%E2%80%AFPM.png" alt="Fortify mission: breaking the relapse cycle" width="100%" />
 </p>
 
 ## Core Features
@@ -54,18 +54,18 @@ A closer look at Fortify's core screens:
 
 <table>
   <tr>
-    <td align="center"><img src="assets/streak-tracker.png" alt="Fortify streak tracking" width="225" /><br /><strong>Streak Tracker</strong></td>
-    <td align="center"><img src="assets/recovery-progress.png" alt="Fortify illustrative recovery progress" width="225" /><br /><strong>Recovery Journey</strong></td>
-    <td align="center"><img src="assets/sanctuary-calendar.png" alt="Fortify sanctuary calendar" width="225" /><br /><strong>Sanctuary</strong></td>
+    <td align="center"><img src="Promo/Screenshot%202025-09-14%20at%2010.15.34%E2%80%AFPM.png" alt="Fortify streak tracking" width="225" /><br /><strong>Streak Tracker</strong></td>
+    <td align="center"><img src="Promo/Screenshot%202025-09-14%20at%2010.36.48%E2%80%AFPM%201.png" alt="Fortify illustrative recovery progress" width="225" /><br /><strong>Recovery Journey</strong></td>
+    <td align="center"><img src="Promo/Screenshot%202025-09-14%20at%2010.40.11%E2%80%AFPM.png" alt="Fortify sanctuary calendar" width="225" /><br /><strong>Sanctuary</strong></td>
   </tr>
   <tr>
-    <td align="center"><img src="assets/ai-journaling.png" alt="Fortify daily journaling interface" width="225" /><br /><strong>AI Journaling</strong></td>
-    <td align="center"><img src="assets/ai-insights.png" alt="Fortify AI insights and weekly review" width="225" /><br /><strong>AI Insights</strong></td>
-    <td align="center"><img src="assets/ai-mentor.png" alt="Fortify personal AI mentor chat" width="225" /><br /><strong>AI Mentor</strong></td>
+    <td align="center"><img src="Promo/Screenshot%202025-09-14%20at%2011.37.13%E2%80%AFPM.png" alt="Fortify daily journaling interface" width="225" /><br /><strong>AI Journaling</strong></td>
+    <td align="center"><img src="Promo/Screenshot%202025-09-14%20at%2010.50.29%E2%80%AFPM.png" alt="Fortify AI insights and weekly review" width="225" /><br /><strong>AI Insights</strong></td>
+    <td align="center"><img src="Promo/Screenshot%202025-09-14%20at%2011.40.58%E2%80%AFPM.png" alt="Fortify personal AI mentor chat" width="225" /><br /><strong>AI Mentor</strong></td>
   </tr>
   <tr>
-    <td align="center"><img src="assets/rewards.png" alt="Fortify rewards screen" width="225" /><br /><strong>Rewards</strong></td>
-    <td align="center"><img src="assets/app-overview.png" alt="Fortify app interface preview" width="225" /><br /><strong>App Overview</strong></td>
+    <td align="center"><img src="Promo/Screenshot%202025-09-14%20at%2011.39.11%E2%80%AFPM.png" alt="Fortify rewards screen" width="225" /><br /><strong>Rewards</strong></td>
+    <td align="center"><img src="Promo/Screenshot%202025-09-25%20at%206.19.29%E2%80%AFPM.png" alt="Fortify app interface preview" width="225" /><br /><strong>App Overview</strong></td>
     <td align="center"><strong>Small daily actions.<br />Lasting personal growth.</strong></td>
   </tr>
 </table>
@@ -74,16 +74,16 @@ A closer look at Fortify's core screens:
 
 <table>
   <tr>
-    <td width="50%"><img src="assets/resilience.jpg" alt="Resilience and in-the-moment support" width="100%" /></td>
-    <td width="50%"><img src="assets/streak-motivation.jpg" alt="Celebrating daily streaks" width="100%" /></td>
+    <td width="50%"><img src="Promo/Gemini_Generated_Image_2ns2r52ns2r52ns2.png" alt="Resilience and in-the-moment support" width="100%" /></td>
+    <td width="50%"><img src="Promo/Gemini_Generated_Image_4c8t6y4c8t6y4c8t.png" alt="Celebrating daily streaks" width="100%" /></td>
   </tr>
   <tr>
-    <td width="50%"><img src="assets/mindful-focus.jpg" alt="Mindful focus" width="100%" /></td>
-    <td width="50%"><img src="assets/ai-guidance.jpg" alt="AI-assisted growth" width="100%" /></td>
+    <td width="50%"><img src="Promo/Gemini_Generated_Image_ywxeisywxeisywxe.png" alt="Mindful focus" width="100%" /></td>
+    <td width="50%"><img src="Promo/Gemini_Generated_Image_nevvumnevvumnevv.png" alt="AI-assisted growth" width="100%" /></td>
   </tr>
   <tr>
-    <td width="50%"><img src="assets/goal-setting.jpg" alt="Setting and pursuing goals" width="100%" /></td>
-    <td width="50%"><img src="assets/rewards-motivation.jpg" alt="Motivation and rewards" width="100%" /></td>
+    <td width="50%"><img src="Promo/Gemini_Generated_Image_galvwygalvwygalv.png" alt="Setting and pursuing goals" width="100%" /></td>
+    <td width="50%"><img src="Promo/Gemini_Generated_Image_px4r6upx4r6upx4r.png" alt="Motivation and rewards" width="100%" /></td>
   </tr>
 </table>
 
@@ -115,7 +115,7 @@ Open the `Android/` directory in **Android Studio**, let Gradle sync, and run th
 fortify/
 |-- Android/                  # Android application
 |-- Fortify-Frontend/         # Web/frontend application
-|-- assets/                   # README screenshots and visuals
+|-- Promo/                    # README screenshots and promotional visuals
 `-- README.md
 ```
 
